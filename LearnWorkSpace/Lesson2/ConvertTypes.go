@@ -1,4 +1,4 @@
-package main
+package Lesson2
 
 import (
 	"fmt";
