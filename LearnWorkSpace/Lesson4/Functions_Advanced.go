@@ -60,6 +60,10 @@ func Functions_Advanced() {
 	fmt.Print("ClosureFunc1 (20): ")
 	closureFunc1()
 
+	closureFunc2 := TestingClosure(digitForTest);
+	fmt.Print("ClosureFunc2 (20): ")
+	closureFunc2()
+
 }
 
 func calculate(x, y int, action func(x, y int) int) int {
