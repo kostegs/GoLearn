@@ -6,7 +6,8 @@ import (
 	//L4 "Lesson4"
 	//L5 "Lesson5"
 	//L6 "Lesson6"
-	L8 "Lesson8"
+	//L8 "Lesson8"
+	L9 "Lesson9"
 )
 
 func main() {
@@ -17,5 +18,6 @@ func main() {
 	//L4.Functions_Advanced();
 	//L5.IfElse()
 	//L6.Cycles();
-	L8.SwitchCase()
+	//L8.SwitchCase()
+	L9.Pointers()
 }
