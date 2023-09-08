@@ -2,10 +2,10 @@ package Lesson9
 
 import "fmt"
 
-func Pointers(){
+func Pointers() {
 
 	// default value
-	var intPointer *int;
+	var intPointer *int
 	fmt.Printf("%T %#v \n", intPointer, intPointer)
 
 	// nil pointer panic
@@ -22,7 +22,7 @@ func Pointers(){
 	// get pointer via new keyword
 	var newPointer = new(float32)
 	fmt.Printf("%T %#v %#v \n", newPointer, newPointer, *newPointer)
-	*newPointer = 3;
+	*newPointer = 3
 	fmt.Printf("%T %#v %#v \n", newPointer, newPointer, *newPointer)
 
 	// Pointers usage
@@ -48,13 +48,13 @@ func Pointers(){
 	fmt.Println("has wallet 3 ", hasWallet(&wallet3))
 }
 
-func square(num int){
+func square(num int) {
 	var numPointer *int = &num
 	fmt.Printf("Значение num в момент вызова square = %#v \n", numPointer)
 	num *= num
 }
 
-func squarePointer(num *int){
+func squarePointer(num *int) {
 	fmt.Printf("Значение num в момент вызова squarePointer = %#v \n", num)
 	*num *= *num
 }
